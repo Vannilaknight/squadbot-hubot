@@ -3,4 +3,4 @@ process.env.FB_LOGIN_PASSWORD = "sonic365"
 
 module.exports = (robot) ->
   robot.hear /Hello/i, (res) ->
-    res.send 'Whats the haps homeslice'
+    FbResponse.sendPrivate("What up?")
