@@ -1,5 +1,8 @@
 fbContact = require('hubot-facebook');
 
 module.exports = (robot) ->
-  bot = fbContact.use(robot)
-  bot.run()
+  fbContact.use(robot)
+
+  robot.listen /Hello/i, (res) ->
+    console.log('Touched')
+    res.send 'Hey There'
