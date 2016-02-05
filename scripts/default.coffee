@@ -5,4 +5,4 @@ module.exports = (robot) ->
 
   robot.listen /Hello/i, (res) ->
     console.log('Touched')
-    res.send 'Hey There'
+    res.read()
